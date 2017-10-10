@@ -1,6 +1,6 @@
 const Cyton = require('openbci').Cyton;
 const ourBoard = new Cyton();
-ourBoard.connect(portName) // Port name is a serial port name, see `.listPorts()`
+ourBoard.connect("COM3") // Port name is a serial port name, see `.listPorts()`
   .then(() => {
     ourBoard.on('ready',() => {
       ourBoard.streamStart();
